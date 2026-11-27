@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LA RADIOESTACIÓN 24/7 - La radio que te acompaña</title>
   <style>
-    /* ==========================================
-       VARIABLES DE COLOR: MODO NOCHE (DEFECTO)
-       ========================================== */
     :root {
       --bg-page: radial-gradient(circle at top, #122d63, #050c1a);
       --bg-dark: #071329;
@@ -27,9 +24,6 @@
       --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.6);
     }
 
-    /* ==========================================
-       VARIABLES DE COLOR: MODO DÍA
-       ========================================== */
     body.light-theme {
       --bg-page: radial-gradient(circle at top, #e0f2fe, #cbd5e1);
       --bg-dark: #f1f5f9;
@@ -80,7 +74,6 @@
       transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
     }
 
-    /* Botón interruptor Día / Noche */
     .theme-toggle-btn {
       position: absolute;
       top: 18px;
@@ -131,7 +124,6 @@
       object-fit: contain;
     }
 
-    /* Ecualizador visual animado */
     .equalizer-container {
       display: flex;
       align-items: flex-end;
@@ -367,7 +359,6 @@
       opacity: 0.92;
     }
 
-    /* Historial */
     .history-box {
       background: var(--surface-soft);
       border-radius: 14px;
@@ -378,3 +369,20 @@
 
     .history-header {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .history-title {
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .clear-history-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      padding: 3px 8px;
